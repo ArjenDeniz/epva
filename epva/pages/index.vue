@@ -3,7 +3,7 @@
     <h1 class="title">Hoş Geldiniz</h1>
     <div class="content">
       <p>
-        Veri Bilimi ve Sosyal Etki Kapasite Geliştirme Programı'na ait dashboard'a hoş geldiniz. 
+        Etki Profesyonelleri için Veri Analitiği kapasite geliştirme programına ait dashboard'a hoş geldiniz. 
         Bu platform, programımızın tüm bileşenlerine erişiminizi sağlamak üzere tasarlanmıştır.
       </p>
       <p>
