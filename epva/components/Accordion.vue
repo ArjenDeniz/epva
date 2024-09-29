@@ -84,72 +84,97 @@ const endTransition = (el) => {
   margin: 0 auto;
 
   &-item {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &-header {
-    background-color: #f5f5f5;
-    padding: 15px;
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
+    transition: all 0.3s ease;
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #2c3e50;
 
     &:hover {
-      background-color: #e5e5e5;
+      background-color: #e9ecef;
     }
 
     &.active {
-      background-color: #e0e0e0;
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    &::after {
+      content: '+';
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    &.active::after {
+      transform: rotate(45deg);
     }
   }
 
   &-content {
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
     will-change: height;
     transition: height 0.3s ease;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 
     :deep(h2) {
       font-size: 1.5em;
-      margin-top: 0.83em;
-      margin-bottom: 0.83em;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
     }
 
     :deep(h3) {
-      font-size: 1.17em;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      font-size: 1.3em;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #34495e;
     }
 
     :deep(h4) {
-      font-size: 1em;
-      margin-top: 1.33em;
-      margin-bottom: 1.33em;
+      font-size: 1.1em;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #3498db;
     }
 
     :deep(p) {
-      margin-top: 1em;
-      margin-bottom: 1em;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: #34495e;
+      line-height: 1.6;
     }
 
     :deep(ul) {
-      padding-left: 20px;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     :deep(a) {
-      color: #0645ad;
+      color: black;
       text-decoration: none;
+      transition: color 0.3s ease;
 
       &:hover {
+        color: #2980b9;
         text-decoration: underline;
       }
     }

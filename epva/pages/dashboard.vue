@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Dashboard</h1>
+  <div class="dashboard-container">
+    <h1 class="dashboard-title">Dashboard</h1>
     <Accordion :items="accordionItems" multiple>
       <template #header="{ item }">
         {{ item.header }}
@@ -14,13 +14,13 @@
 //   middleware: ['auth-user']
 // })
 const accordionItems = [
-  { header: 'Bilimsel Hazırlık Çalışma Kaynakları', content: `  <p>Aşağıdaki bağlantılar, belirli alanlarda kendinizi geliştirmenize yardımcı olmak için sunulmuştur. Bu kaynaklar, program konularında kendinizi daha güvende hissetmenizi sağlayacaktır.</p>
+  { header: 'Bilimsel Hazırlık Çalışma Kaynakları', content: `  <p>Aşağıdaki bağlantılar, bilimsel hazırlık testi sonucunda kendinizi rahat hissetmediğiniz alanları geliştirmenize yardımcı olmak için sunulmuştur. Bu kaynaklar, program konularında kendinizi daha güvende hissetmenizi sağlayacaktır.</p>
   
   <h3>Bilimsel Hazırlık</h3>
   
   <h4>Veri Toplama:</h4>
   <ul>
-    <li><a href="https://support.microsoft.com/tr-tr/office/yeni-bir-form-veya-test-oluşturma-3c39c220-e30e-401d-bb6f-c1861d5aea01" target="_blank">Forms Basics</a></li>
+    <li><a href="https://support.microsoft.com/tr-tr/office/yeni-bir-form-veya-test-oluşturma-3c39c220-e30e-401d-bb6f-c1861d5aea01" target="_blank">Form Oluşturma Temelleri</a></li>
   </ul>
   
   <h4>İstatistik:</h4>
@@ -32,7 +32,27 @@ const accordionItems = [
   
   <h4>Excel:</h4>
   <ul>
-    <li><a href="https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb" target="_blank">Basics</a></li>
+    <li><a href="https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb" target="_blank">Excel Temelleri</a></li>
   </ul>` },
 ]
 </script>
+<style lang="scss" scoped>
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 1rem;
+}
+</style>
