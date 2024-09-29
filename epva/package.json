@@ -16,5 +16,8 @@
     "nuxt-vuefire": "^1.0.4",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.79.4"
   }
 }

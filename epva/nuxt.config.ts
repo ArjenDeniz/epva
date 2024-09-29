@@ -4,10 +4,6 @@ export default defineNuxtConfig({
   ssr:false,
   modules: ['nuxt-vuefire'],
   vuefire: {
-    auth: {
-      enabled: true,
-      sessionCookie: false
-    },
     config: {
       apiKey: process.env.apiKey,
       authDomain: process.env.authDomain,
@@ -15,7 +11,9 @@ export default defineNuxtConfig({
       storageBucket: process.env.storageBucket,
       messagingSenderId: process.env.messagingSenderId,
       appId: process.env.appId
-    }
+    },
+    auth: true,
+    analytics: true,
   },
   app: {
     head: {
@@ -23,5 +21,8 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/amblem.png' }
       ]
     }
-  }
+  },
+  plugins: [
+    '~/plugins/firebase.client.js'
+  ],
 })
