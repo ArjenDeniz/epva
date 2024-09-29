@@ -36,12 +36,12 @@ const accordionItems = [
   </ul>` },{header:"İngilizce Kaynaklar Nasıl Çevirilir?", content:`<p>Chrome'un yerleşik çeviri özelliği, İngilizce kaynakları kolayca Türkçe'ye çevirmenizi sağlar. Bu yöntem, ayrı bir çeviri sayfası açmaya gerek kalmadan, doğrudan web sayfasını çevirmenize olanak tanır. Aşağıdaki stepleri gereksinimleri sağladıktan sonra Opera, Safari, Edge gibi tarayıcılar için de kullanabilirsiniz.</p>
   
   <h3>Temel Adımlar:</h3>
-  <ol>
+  <ul>
     <li>Chrome tarayıcısını açın.</li>
     <li>Çevirmek istediğiniz İngilizce web sayfasına gidin.</li>
     <li>Chrome otomatik olarak sayfanın dilini algılayacak ve çeviri seçeneği sunacaktır.</li>
     <li>Çeviri seçeneğine tıklayarak sayfayı Türkçe'ye çevirin.</li>
-  </ol>
+  </ul>
   
   <p><strong>Not:</strong> Otomatik çevirilerin her zaman mükemmel olamayacağını unutmayın. Özellikle teknik terimlerde veya karmaşık açıklamalarda, orijinal metne de göz atmanız faydalı olabilir.</p>
   `}
