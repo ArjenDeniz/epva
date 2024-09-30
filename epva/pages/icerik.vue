@@ -14,7 +14,7 @@
 //   middleware: ['auth-user']
 // })
 const accordionItems = [
-  { header: 'Bilimsel Hazırlık Çalışma Kaynakları', content: `  <p>Aşağıdaki bağlantılar, bilimsel hazırlık testi sonucunda kendinizi rahat hissetmediğiniz alanları geliştirmenize yardımcı olmak için sunulmuştur. Bu kaynaklar, program konularında kendinizi daha güvende hissetmenizi sağlayacaktır.</p>
+  { header: 'Bilimsel Hazırlık Çalışma Kaynakları', content: `  <p>Aşağıdaki bağlantılar, bilgi seviyesi anketi sonucunda kendinizi rahat hissetmediğiniz alanları geliştirmenize yardımcı olmak için seçilerek sunulmuştur.</p>
   
   <h3>Bilimsel Hazırlık</h3>
   
