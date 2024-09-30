@@ -10,7 +10,7 @@
         Bu program, Impact Hub Ankara ve Rubiks Analytics'in ortak çalışmasının bir ürünüdür. 
         Impact Hub Ankara topluluğunda yer alan Rubiks Analytics’in veri bilimi ve analitiği alanındaki bilgi ve tecrübelerinin, Impact Hub’ın sosyal etki alanındaki uzmanlığı ile biraraya gelmesiyle tasarlanan kapasite geliştirme programı, özellikle sosyal alanlarda çalışanlara, veri bilimi, veri analitiği ve istatistik konularında derinlemesine bilgi kazandırmayı hedefliyor. 
       </p>
-      <NuxtLink to="/dashboard" class="button">Dashboard'a git</NuxtLink>
+      <NuxtLink to="/icerik" class="button">Dashboard'a git</NuxtLink>
       <div class="dashboard-info">
         <p>Dashboard'unuzda şunları bulacaksınız:</p>
         <ul>
