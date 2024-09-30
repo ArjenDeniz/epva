@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <h1 class="dashboard-title">Dashboard</h1>
+    <h1 class="dashboard-title">Epva</h1>
     <Accordion :items="accordionItems" multiple>
       <template #header="{ item }">
         {{ item.header }}
