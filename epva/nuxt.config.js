@@ -25,4 +25,15 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/firebase.client.js'
   ],
+  css: ['~/assets/scss/main.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api:'modern',
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;'
+        }
+      }
+    }
+  }
 })

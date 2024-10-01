@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="py-32 text-6xl text-[#50b0ae] font-bold text-center"
+    class="deneme"
   >
     {{ blok.headline }}
   </div>
@@ -10,3 +10,8 @@
 <script setup>
 defineProps({ blok: Object })
 </script>
+<style lang="scss">
+.deneme{
+  color: $primary-color;
+}
+</style>
