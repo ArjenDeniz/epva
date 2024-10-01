@@ -25,6 +25,12 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/firebase.client.js'
   ],
+  link: [
+      {
+      rel: 'stylesheet',
+      href: '"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200..1000;1,200..1000&display=swap'
+      }
+  ],
   css: ['~/assets/scss/main.scss'],
   vite: {
     css: {

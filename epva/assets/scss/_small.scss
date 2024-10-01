@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+body{
+    font-size: 14px;
+}
+@for $i from 1 through 6 {
+    $w: $i * 4px;
+
+    .mt-#{$i} {
+        margin-top: $w;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $w;
+    }
+
+    .ml-#{$i} {
+        margin-left: $w;
+    }
+
+    .mr-#{$i} {
+        margin-right: $w;
+    }
+
+    .pt-#{$i} {
+        padding-top: $w;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $w;
+    }
+
+    .pl-#{$i} {
+        padding-left: $w;
+    }
+
+    .pr-#{$i} {
+        padding-right: $w;
+    }
+}
+}
