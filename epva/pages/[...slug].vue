@@ -5,6 +5,9 @@ const story = await useAsyncStoryblok(
   slug && slug.length > 0 ? slug.join('/') : 'home',
   { version: 'draft' }
 )
+definePageMeta({
+  middleware: ['auth']
+})
 </script>
  
 <template>
