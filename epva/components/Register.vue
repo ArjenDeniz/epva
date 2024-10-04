@@ -21,6 +21,8 @@ export default {
   setup() {
     const email = ref('');
     const password = ref('');
+    const router = useRouter();
+
 
     const register = async () => {
       try {
@@ -30,7 +32,7 @@ export default {
       } catch (error) {
         console.error('Registration error:', error);
         // Handle registration error (e.g., show error message)
-        alert('Kayıt başarısız. Lütfen tekrar deneyin.');
+        alert('Kayıt başarısız. Lütfen tekrar deneyin., Hata kodu: ' + error);
       }
     };
 

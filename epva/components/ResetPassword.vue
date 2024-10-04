@@ -19,7 +19,7 @@ import { authService } from '~/services/authService';
 export default {
   setup() {
     const email = ref('');
-
+    const router = useRouter();
     const resetPassword = async () => {
       try {
         await authService.resetPassword(email.value);
