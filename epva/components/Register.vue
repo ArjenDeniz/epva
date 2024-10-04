@@ -1,11 +1,14 @@
 <!-- components/Register.vue -->
 <template>
   <div class="auth-form">
-    <h2>Register</h2>
+    <h2>Yeni hesap oluşturun</h2>
     <form @submit.prevent="register">
-      <input v-model="email" type="email" placeholder="Email" required>
-      <input v-model="password" type="password" placeholder="Password" required>
-      <button type="submit">Register</button>
+      <input v-model="email" type="email" placeholder="E-posta" required>
+      <input v-model="password" type="password" placeholder="Parola" required>
+      <button type="submit">Kayıt ol</button>
+      <p style="text-align: left;">
+      <NuxtLink to="/login">Zaten hesabınız var mı?</NuxtLink>
+      </p>
     </form>
   </div>
 </template>
@@ -22,10 +25,12 @@ export default {
     const register = async () => {
       try {
         await authService.register(email.value, password.value);
+        router.push('/login');
         // Handle successful registration (e.g., redirect to dashboard)
       } catch (error) {
         console.error('Registration error:', error);
         // Handle registration error (e.g., show error message)
+        alert('Kayıt başarısız. Lütfen tekrar deneyin.');
       }
     };
 
@@ -37,36 +42,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.auth-form {
-  max-width: 300px;
-  margin: 0 auto;
-
-  h2 {
-    text-align: center;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-
-    input {
-      margin-bottom: 10px;
-      padding: 8px;
-    }
-
-    button {
-      padding: 8px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-
-      &:hover {
-        background-color: #45a049;
-      }
-    }
-  }
-}
-</style>

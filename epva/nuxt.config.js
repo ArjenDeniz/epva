@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'EPVA - Platform',
       link: [
         { rel: 'icon', type: 'image/png', href: '/amblem.png' }
       ]
