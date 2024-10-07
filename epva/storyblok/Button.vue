@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink v-editable="blok" :to="blok.reference" class="button pb-2 pt-2 pr-4 pl-4 mb-2 mt-2 ml-2 mr-2">
+    <NuxtLink v-editable="blok" :to="blok.reference" class="button pb-2 pt-2 pr-3 pl-3 mb-1 mt-1 mr-2">
         {{blok.text}}
     </NuxtLink>
 </template>
