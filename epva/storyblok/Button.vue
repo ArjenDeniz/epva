@@ -16,6 +16,7 @@ defineProps({ blok: Object })
   border-radius: 4px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
   &:hover {
     background-color: $secondary-color;
     transform: translateY(-2px);
