@@ -10,14 +10,17 @@ const  props = defineProps({ blok: Object })
 const resolveRichText = computed( () => renderRichText(props.blok.text))
 </script>
 <style lang="scss" scoped>
-a {
-    color: $primary-color;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.content{
+    :deep(a) {
+        color: $primary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
 
-    &:hover {
-        color: $tertiary-color;
-        text-decoration: underline;
+        &:hover {
+            color: $tertiary-color;
+            text-decoration: underline;
+        }
     }
 }
+
 </style>
